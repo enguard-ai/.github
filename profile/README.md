@@ -11,7 +11,7 @@ We produce guardrails based on
 
 ### Which guards are available?
 
-| Dataset | Classifies | Collection | Smallest (-2m) | Best Performing | Multi-lingual |
+| Dataset | Classifies | Collection | Smallest (2m) | Best Performing | Multi-lingual (128m) |
 | --- | --- | --- | --- | --- | --- |
 | [harmfulness-mix](https://huggingface.co/datasets/nicholasKluge/harmful-text) | harmfulness | [Collection](https://huggingface.co/collections/enguard/harmfulness-harmfulness-mix) | [0.9192](https://huggingface.co/enguard/tiny-guard-2m-en-harmfulness-harmfulness-mix) | [0.9350](https://huggingface.co/enguard/small-guard-32m-en-harmfulness-harmfulness-mix) | - |
 | [intel](https://huggingface.co/datasets/Intel/polite-guard) | politeness | [Collection](https://huggingface.co/collections/enguard/politeness-intel) | [0.8795](https://huggingface.co/enguard/tiny-guard-2m-en-politeness-intel) | [0.8908](https://huggingface.co/enguard/medium-guard-128m-xx-politeness-intel) | [0.8908](https://huggingface.co/enguard/medium-guard-128m-xx-politeness-intel) |
