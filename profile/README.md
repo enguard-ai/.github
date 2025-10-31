@@ -1,3 +1,27 @@
 ## Enguard AI
 
 One guardrail for all, all guardrails for one!
+
+We produce guardrails based on
+
+### Why
+
+- Optimised for precision to reduce false positives.
+- Extremely fast inference using static embeddings powered by Model2Vec.
+
+### Which guards are available?
+
+| Dataset | Classifies | Collection | Smallest (-2m) | Best Performing | Multi-lingual |
+| --- | --- | --- | --- | --- | --- |
+| [harmfulness-mix](https://huggingface.co/datasets/nicholasKluge/harmful-text) | harmfulness | [Collection](https://huggingface.co/collections/enguard/harmfulness-harmfulness-mix) | [0.9192](https://huggingface.co/enguard/tiny-guard-2m-en-harmfulness-harmfulness-mix) | [0.9350](https://huggingface.co/enguard/small-guard-32m-en-harmfulness-harmfulness-mix) | - |
+| [intel](https://huggingface.co/datasets/Intel/polite-guard) | politeness | [Collection](https://huggingface.co/collections/enguard/politeness-intel) | [0.8795](https://huggingface.co/enguard/tiny-guard-2m-en-politeness-intel) | [0.8908](https://huggingface.co/enguard/medium-guard-128m-xx-politeness-intel) | [0.8908](https://huggingface.co/enguard/medium-guard-128m-xx-politeness-intel) |
+| [jailbreak-in-the-wild](https://huggingface.co/datasets/TrustAIRLab/in-the-wild-jailbreak-prompts) | jailbreak | [Collection](https://huggingface.co/collections/enguard/jailbreak-jailbreak-in-the-wild) | [0.8515](https://huggingface.co/enguard/tiny-guard-2m-en-jailbreak-jailbreak-in-the-wild) | [0.8905](https://huggingface.co/enguard/medium-guard-128m-xx-jailbreak-jailbreak-in-the-wild) | [0.8905](https://huggingface.co/enguard/medium-guard-128m-xx-jailbreak-jailbreak-in-the-wild) |
+| [jailbreak-sok](https://huggingface.co/datasets/youbin2014/JailbreakDB) | jailbreak | [Collection](https://huggingface.co/collections/enguard/jailbreak-jailbreak-sok) | [0.9762](https://huggingface.co/enguard/tiny-guard-2m-en-jailbreak-jailbreak-sok) | [0.9810](https://huggingface.co/enguard/medium-guard-128m-xx-jailbreak-jailbreak-sok) | [0.9810](https://huggingface.co/enguard/medium-guard-128m-xx-jailbreak-jailbreak-sok) |
+| [jigsaw](https://huggingface.co/datasets/google/jigsaw_toxicity_pred) | toxicity | [Collection](https://huggingface.co/collections/enguard/toxicity-jigsaw) | [0.8967](https://huggingface.co/enguard/tiny-guard-2m-en-toxicity-jigsaw) | [0.9067](https://huggingface.co/enguard/small-guard-32m-en-toxicity-jigsaw) | [0.8986](https://huggingface.co/enguard/medium-guard-128m-xx-toxicity-jigsaw) |
+| [nvidia-aegis](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0) | response-safety | [Collection](https://huggingface.co/collections/enguard/response-safety-nvidia-aegis) | [0.7612](https://huggingface.co/enguard/tiny-guard-2m-en-response-safety-nvidia-aegis) | [0.7760](https://huggingface.co/enguard/tiny-guard-4m-en-response-safety-nvidia-aegis) | [0.7530](https://huggingface.co/enguard/medium-guard-128m-xx-response-safety-nvidia-aegis) |
+| [nvidia-aegis](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0) | prompt-safety | [Collection](https://huggingface.co/collections/enguard/prompt-safety-nvidia-aegis) | [0.7957](https://huggingface.co/enguard/tiny-guard-2m-en-prompt-safety-nvidia-aegis) | [0.8131](https://huggingface.co/enguard/tiny-guard-8m-en-prompt-safety-nvidia-aegis) | [0.7929](https://huggingface.co/enguard/medium-guard-128m-xx-prompt-safety-nvidia-aegis) |
+| [polyguard](https://huggingface.co/datasets/ToxicityPrompts/PolyGuardMix) | response-safety | [Collection](https://huggingface.co/collections/enguard/response-safety-polyguard) | [0.8623](https://huggingface.co/enguard/tiny-guard-2m-en-response-safety-polyguard) | [0.8796](https://huggingface.co/enguard/small-guard-32m-en-response-safety-polyguard) | [0.8754](https://huggingface.co/enguard/medium-guard-128m-xx-response-safety-polyguard) |
+| [polyguard](https://huggingface.co/datasets/ToxicityPrompts/PolyGuardMix) | response-refusal | [Collection](https://huggingface.co/collections/enguard/response-refusal-polyguard) | [0.8973](https://huggingface.co/enguard/tiny-guard-2m-en-response-refusal-polyguard) | [0.9086](https://huggingface.co/enguard/tiny-guard-4m-en-response-refusal-polyguard) | [0.9052](https://huggingface.co/enguard/medium-guard-128m-xx-response-refusal-polyguard) |
+| [polyguard](https://huggingface.co/datasets/ToxicityPrompts/PolyGuardMix) | prompt-safety | [Collection](https://huggingface.co/collections/enguard/prompt-safety-polyguard) | [0.9104](https://huggingface.co/enguard/tiny-guard-2m-en-prompt-safety-polyguard) | [0.9332](https://huggingface.co/enguard/small-guard-32m-en-prompt-safety-polyguard) | [0.9257](https://huggingface.co/enguard/medium-guard-128m-xx-prompt-safety-polyguard) |
+| [toxic-chat](https://huggingface.co/datasets/lmsys/toxic-chat) | response-jailbreak | [Collection](https://huggingface.co/collections/enguard/response-jailbreak-toxic-chat) | [0.9872](https://huggingface.co/enguard/tiny-guard-2m-en-response-jailbreak-toxic-chat) | [0.9914](https://huggingface.co/enguard/small-guard-32m-en-response-jailbreak-toxic-chat) | - |
+| [toxic-chat](https://huggingface.co/datasets/lmsys/toxic-chat) | prompt-toxicity | [Collection](https://huggingface.co/collections/enguard/prompt-toxicity-toxic-chat) | [0.9515](https://huggingface.co/enguard/tiny-guard-2m-en-prompt-toxicity-toxic-chat) | [0.9555](https://huggingface.co/enguard/tiny-guard-8m-en-prompt-toxicity-toxic-chat) | - |
