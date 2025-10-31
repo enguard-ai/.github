@@ -4,7 +4,7 @@ One guardrail for all, all guardrails for one!
 
 We produce guardrails based on
 
-### Why
+### Why should you use these models?
 
 - Optimised for precision to reduce false positives.
 - Extremely fast inference using static embeddings powered by Model2Vec.
